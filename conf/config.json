@@ -1,0 +1,30 @@
+{
+  "version": "0.1-beta",
+  "window": {
+    "position-x": 1768,
+    "position-y": 67,
+    "list": {
+      "maxItem": 10
+    }
+  },
+  "custom": {
+    "DisplayX": {
+      "path": "D:\\tools\\DisplayX.exe",
+      "icon": "$default$",
+      "startPath": "$auto$",
+      "args": ""
+    },
+    "a.csv": {
+      "path": "F:\\Desktop\\a.csv",
+      "icon": "$default$",
+      "startPath": "$auto$",
+      "args": ""
+    },
+    "排查-步骤2.docx": {
+      "path": "F:\\Desktop\\排查-步骤2.docx",
+      "icon": "$default$",
+      "startPath": "$auto$",
+      "args": ""
+    }
+  }
+}
