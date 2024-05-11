@@ -14,6 +14,8 @@
 模块，以子进程启动，使系统隔离，子模块的缺陷不会引起主进程的阻塞
 
 详见：https://www.zunmx.top/archives/1405/
+![image](https://github.com/zunmx/MyTools/assets/35682146/c538ce13-0760-4843-abec-d96254f0e0d9)
+![image](https://github.com/zunmx/MyTools/assets/35682146/fd1bdf9a-2a52-46af-8042-9ee0fd7d5249)
 
 # TODO:
 
