@@ -175,7 +175,7 @@ class System:
                 self.command['serials'][boot.get('serial')] = boot
                 for method in boot.get('methods'):
                     self.command['methods'][boot.get('serial') + "$@$" + method.get('entry')] = method
-                    self.logger.debug(f"""add method [{method.get('entry')}] from {module_file}""")
+                    self.logger.debug(f"""add method [{method.get('entry')}] <--- {module_file}""")
                 for executor in self.config['custom']:
                     self.logger.debug(f"""add method [{executor}] from custom""")
                     self.command['custom'][executor] = self.config['custom'][executor]

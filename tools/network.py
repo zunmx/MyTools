@@ -50,8 +50,8 @@ class Entry:
         pass
 
     def get_ip(self):
-        get = requests.get("http://www.zunmx.top/test.php")
-        return {"公网IP：": get.text.split("<br/>")[0]}
+        get = requests.get("https://www.zunmx.top/api/single/getIP.php")
+        return get.text
 
     def get_hosts(self):
         with open(os.getenv("windir") + r"\system32\drivers\etc\hosts", 'r', encoding='utf8') as f:

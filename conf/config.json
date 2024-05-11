@@ -1,27 +1,93 @@
 {
   "version": "0.1-beta",
   "window": {
-    "position-x": 1768,
-    "position-y": 67,
+    "position-x": 1762,
+    "position-y": 89,
     "list": {
       "maxItem": 10
     }
   },
   "custom": {
-    "DisplayX": {
-      "path": "D:\\tools\\DisplayX.exe",
+    "Dism++x64.exe": {
+      "path": "D:\\tools\\系统相关\\DISM\\Dism++x64.exe",
       "icon": "$default$",
       "startPath": "$auto$",
       "args": ""
     },
-    "a.csv": {
-      "path": "F:\\Desktop\\a.csv",
+    "NirLauncher.exe": {
+      "path": "D:\\tools\\系统相关\\nirsoft_package_enc_1.30.10\\NirLauncher.exe",
       "icon": "$default$",
       "startPath": "$auto$",
       "args": ""
     },
-    "排查-步骤2.docx": {
-      "path": "F:\\Desktop\\排查-步骤2.docx",
+    "NSudo.bat": {
+      "path": "D:\\tools\\系统相关\\NSudo Launcher\\NSudo.bat",
+      "icon": "$default$",
+      "startPath": "$auto$",
+      "args": ""
+    },
+    "RegistryFinder.exe": {
+      "path": "D:\\tools\\系统相关\\RegistryFinder64\\RegistryFinder.exe",
+      "icon": "$default$",
+      "startPath": "$auto$",
+      "args": ""
+    },
+    "RegSnap.exe": {
+      "path": "D:\\tools\\系统相关\\RegSnap6\\RegSnap.exe",
+      "icon": "$default$",
+      "startPath": "$auto$",
+      "args": ""
+    },
+    "WndSpy.exe": {
+      "path": "D:\\tools\\系统相关\\windows spy\\WndSpy.exe",
+      "icon": "$default$",
+      "startPath": "$auto$",
+      "args": ""
+    },
+    "OpenArk64.exe": {
+      "path": "D:\\tools\\系统相关\\OpenArk64.exe",
+      "icon": "$default$",
+      "startPath": "$auto$",
+      "args": ""
+    },
+    "DiskGenius.exe": {
+      "path": "D:\\tools\\硬盘软件\\DiskGenius\\DiskGenius.exe",
+      "icon": "$default$",
+      "startPath": "$auto$",
+      "args": ""
+    },
+    "Qemu启动测试器.exe": {
+      "path": "D:\\tools\\硬盘软件\\Qemu启动测试器.exe",
+      "icon": "$default$",
+      "startPath": "$auto$",
+      "args": ""
+    },
+    "Duplicate Cleaner 5.exe": {
+      "path": "D:\\tools\\文件处理\\Duplicate Cleaner 5\\Duplicate Cleaner 5.exe",
+      "icon": "$default$",
+      "startPath": "$auto$",
+      "args": ""
+    },
+    "Everything.exe": {
+      "path": "D:\\tools\\文件处理\\Everything 文件查找\\Everything.exe",
+      "icon": "$default$",
+      "startPath": "$auto$",
+      "args": ""
+    },
+    "GoodSync2Go.bat": {
+      "path": "D:\\tools\\文件处理\\Goodsync\\GoodSync2Go.bat",
+      "icon": "$default$",
+      "startPath": "$auto$",
+      "args": ""
+    },
+    "Hasher.exe": {
+      "path": "D:\\tools\\文件处理\\Hasher Pro 3.3.0\\Hasher.exe",
+      "icon": "$default$",
+      "startPath": "$auto$",
+      "args": ""
+    },
+    "WinHex64.exe": {
+      "path": "D:\\tools\\文件处理\\winhex\\WinHex64.exe",
       "icon": "$default$",
       "startPath": "$auto$",
       "args": ""

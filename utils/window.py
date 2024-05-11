@@ -146,7 +146,6 @@ def enter(event, pms_pre=False):  # 最终的调用
     elif 'params' not in system.command['methods'][f"""{cmd['serial']}$@${cmd['entry']}"""]:
         list_exit()
         system.executeCommand(cmd['serial'], cmd['entry'])
-
     else:
         list_pms_layout = True
         make_param(cmd)
@@ -155,6 +154,7 @@ def enter(event, pms_pre=False):  # 最终的调用
 
 def make_param(cmd):
     global list_pms_current_entry
+
     idx = 0
     list_pms_current_entry = cmd['entry']
     tmp = system.command['methods'][f"""{cmd['serial']}$@${cmd['entry']}"""]['params']
@@ -168,7 +168,6 @@ def make_param(cmd):
         else:
             icon = os.path.join(system.path['RPath'], 'logo.png')
         icon = os.path.join(system.path['TPath'], icon)
-
         draw_selbox(idx, cmd['serial'], tmp[item], module, item, icon)
         list_pms_content[item] = ""
         list_pms_i2p_mapping[idx] = item
@@ -176,12 +175,27 @@ def make_param(cmd):
     draw_selbox(idx, cmd['serial'], '调用', module, '执行模块', icon)
     list_pms_i2p_mapping[idx] = '$executeCommand$'
     if idx > 0:
-        listWindow.geometry(f"{width}x{height + 36 * idx + 6}")
+        listWindow.geometry(f"{width}x{height + 36 * idx + 3}")
     else:
         listWindow.geometry(f"{width}x{height}")
+    global selbox
+    global selector_index
+    selector_index = 1
+    selector()
+
+    for index in selbox:
+        idx -= 1
+        if idx < 0:
+            for item in selbox[index]:
+                if item not in ('id', 'serial', 'entry', 'image', 'img'):
+                    selbox[index][item].destroy()
+                else:
+                    selbox[index][item] = None
+
 
 
 def draw_selbox(idx, serial, description, module, title, icon):
+    print(idx, serial, description, module, title, icon)
     selbox[idx] = {'id': idx}
     selbox[idx]['serial'] = serial
     selbox[idx]['entry'] = title
@@ -314,7 +328,13 @@ def create_list_window(event):
                 enter(event)
             # 调用方法
         elif event.keycode == 27:
-            list_exit()
+            if not list_pms_layout:
+                list_exit()
+            else:
+                list_pms_layout = False
+                e_edit.delete(0, END)
+                make_list([])
+                selector()
         elif event.keycode == 38:
             if selector_index == 1: return
             selector_index -= 1
